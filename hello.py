@@ -18,10 +18,7 @@ def login():
          return render_template('reenter.html')
         
       else:
-         em=data['email']
-         sub=data['subject']
-         con=data['message']+f" \n \n from:{em}"
-         sm.sender(em,sub,con)
+         
          return render_template('thanks.html')
 
 
